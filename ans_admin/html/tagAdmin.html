@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台管理</title>
+		<link rel="stylesheet" href="../css/creatCourse.css">
+	</head>
+	<body>
+		<div display="inline-block" class="Content-Main">
+			<span><a href="./Admin.html">管理帖子</span>
+			<span><a href="./courseAdmin.html">添加课程</a></span>
+			<span>添加标签</span>
+		</div>
+		<div display="inline-block" class="Content-Main" id="app">
+			<input placeholder="请输入要添加的标签" v-model="name">
+			<button @click="addTag">添加</button>
+			<table border=1>
+				<tr>
+					<td>标签id</td>
+					<td>标签名</td>
+				</tr>
+				<tr v-for="i in tagList">
+					<td>{{i.id}}</td>
+					<td>{{i.name}}</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script src="../js/vue.js"></script>
+	<script src="../js/axios.min.js"></script>
+	<script src="../js/const.js"></script>
+	<script src="../js/tagAdmin.js"></script>
+</html>

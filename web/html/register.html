@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入样式 -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/title.css">
+    <link rel="stylesheet" href="../fa/css/all.css">
+    
+	<style>
+		.center{
+            width: 600px;
+            margin:100px auto 0;
+        }
+        .center h1,
+        .center .info-inp{
+            text-align: center;
+        }
+        .center span{
+            display:inline-block;
+            width: 80px;
+            margin-bottom:20px;
+        }
+        .center button{
+            width: 100px;
+            margin: 0 260px;
+        }
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	    <div class="title-wrapper">
+	        <div class="title-wrapper-center">
+	            <i class="fas fa-envelope fa-2x" id="mail"></i>
+	            <h2 id="answer-title">你有答案吗</h2>
+	        </div>
+	    </div>
+	</div>
+
+
+	<div class="center">
+		<h1 >注册</h1>
+		<div class="info-inp">
+            <span>用户名: </span>
+			<input type="text" name="user"><br>
+		</div>
+		<div class="info-inp">
+            <span>密码: </span>
+			<input type="password" name="password"><br>
+		</div>
+		<div class="info-inp">
+            <span>确认密码: </span>
+			<input type="password" name="ensurepassword"><br>
+		</div>
+		<div class="info-inp">
+            <span>昵称: </span>
+			<input type="text" name="uname"><br>
+		</div>
+		<div class="info-inp">
+            <span>生日: </span>
+			<input type="text" name="user"><br>
+		</div>
+		<div class="info-inp">
+            <span>院系: </span>
+			<select name="colleges">
+                    <option value="sxy">商学院</option>
+                    <option value="fxy">法学院</option>
+                    <option value="hyxy">海洋学院</option>
+                    <option value="ysxy">艺术学院</option>
+                    <option value="dbyxy">东北亚学院</option>
+                    <option value="kjwlxy">空间物理学院</option>
+                    <option value="agllhlxyxy">澳国立联合理学院</option>
+                    <option value="jdyxxgcxy">机电与信息工程学院</option>
+            </select><br>
+		</div>
+	
+		<button>注册</button>
+	</div>
+
+</body>
+</html>

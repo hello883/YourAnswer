@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		#app .search{
+			height: 30px;
+			width: 280px;
+			margin:0 auto;
+		}
+	</style>
+	<head>
+		<meta charset="utf-8">
+		<title>后台管理</title>
+		<link rel="stylesheet" href="../css/creatCourse.css">
+	</head>
+	<body>
+		<div display="inline-block" class="Content-Main">
+			<span>管理帖子</span>
+			<span><a href="./courseAdmin.html">添加课程</a></span>
+			<span><a href="./tagAdmin.html">添加标签</a></span>
+		</div>
+		<div id="app">
+			<div class="search" >
+				<input type="text" v-model="typeId" placeholder="输入课程id搜索">
+				<button @click="search">搜索</button>
+			</div>
+			
+			<table border=1 class="Content-Main" >
+				<tr v-for="post in postInfo">
+					{{post}}
+					<td height="100">
+						<span>标题：{{post.title}}</span><br>
+						<span>内容：{{post.text}}</span>
+						<button @click="deletep(post.id)" class="btn">删除</button>
+					</td>
+				</tr>			
+			</table>
+		</div>
+	</body>
+	<script src="../js/vue.js"></script>
+	<script src="../js/axios.min.js"></script>
+	<script src="../js/const.js"></script>
+	<script src="../js/admin.js"></script>
+</html>

@@ -1,0 +1,41 @@
+.title-wrapper{
+    height: 60px;
+    width: 100%;
+    background-color: #DCDFE6;
+}
+.title-wrapper .title-wrapper-center{
+    width: 1300px;
+    height:60px;
+    margin: 0 auto 0;
+}
+.title-wrapper #mail{
+    float:left;
+    line-height:60px;
+    margin-right:10px;
+}
+.title-wrapper #answer-title{
+    /* display:block; */
+    float: left;
+    line-height: 60px;
+    /* margin-top: 10px; */
+    /* text-align: center; */
+}
+.search-frame{
+    float:right;
+    margin: 16px;
+    text-align: center;
+    position:relative;
+}
+.search-frame #search-btn{
+    width:60px;
+    font-size: 14px;
+}
+.search-frame #search-inp{
+    width:300px;
+    padding-left: 20px;
+}
+.search-frame i{
+    position:absolute;
+    left: 4px;
+    top: 5px;
+}

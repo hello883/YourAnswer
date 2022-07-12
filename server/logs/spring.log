@@ -1,0 +1,219 @@
+2022-07-09 01:09:14.661  WARN 18544 --- [http-nio-9004-exec-17] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2022-07-09 01:09:14.661  WARN 18544 --- [http-nio-9004-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2022-07-09 01:09:14.661  WARN 18544 --- [http-nio-9004-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2022-07-09 01:09:14.671  WARN 18544 --- [http-nio-9004-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'postDTO' on field 'typeId': rejected value [undefined]; codes [typeMismatch.postDTO.typeId,typeMismatch.typeId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [postDTO.typeId,typeId]; arguments []; default message [typeId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'typeId'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+Field error in object 'postDTO' on field 'userId': rejected value [undefined]; codes [typeMismatch.postDTO.userId,typeMismatch.userId,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [postDTO.userId,userId]; arguments []; default message [userId]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'userId'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]]
+2022-07-09 01:09:48.124  WARN 18544 --- [http-nio-9004-exec-13] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2022-07-09 01:09:48.272 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.TagMapper.selectList   : ==>  Preparing: SELECT id,name FROM tag 
+2022-07-09 01:09:48.272 DEBUG 18544 --- [http-nio-9004-exec-4] c.t.s.mapper.CourseMapper.selectList     : ==>  Preparing: SELECT id,name,number,img FROM course 
+2022-07-09 01:09:48.272 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.s.m.WeeklyPointMapper.selectList     : ==>  Preparing: SELECT owner_id,weekly_point FROM weekly_point 
+2022-07-09 01:09:48.670 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.s.m.WeeklyPointMapper.selectList     : ==> Parameters: 
+2022-07-09 01:09:48.670 DEBUG 18544 --- [http-nio-9004-exec-4] c.t.s.mapper.CourseMapper.selectList     : ==> Parameters: 
+2022-07-09 01:09:48.670 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.TagMapper.selectList   : ==> Parameters: 
+2022-07-09 01:09:48.807 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.TagMapper.selectList   : <==      Total: 7
+2022-07-09 01:09:48.808 DEBUG 18544 --- [http-nio-9004-exec-4] c.t.s.mapper.CourseMapper.selectList     : <==      Total: 52
+2022-07-09 01:09:48.872 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.s.m.WeeklyPointMapper.selectList     : <==      Total: 22
+2022-07-09 01:09:49.803 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:49.804 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 7(Integer)
+2022-07-09 01:09:49.853 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:49.854 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:49.854 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 12(Integer)
+2022-07-09 01:09:50.012 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.013 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.013 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 3(Integer)
+2022-07-09 01:09:50.014 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.016 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.017 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 4(Integer)
+2022-07-09 01:09:50.018 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.018 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.018 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 5(Integer)
+2022-07-09 01:09:50.019 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.020 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.020 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 2(Integer)
+2022-07-09 01:09:50.021 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.022 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.022 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 16(Integer)
+2022-07-09 01:09:50.023 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.025 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.025 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 11(Integer)
+2022-07-09 01:09:50.026 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.027 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.027 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 1(Integer)
+2022-07-09 01:09:50.028 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.029 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.029 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 8(Integer)
+2022-07-09 01:09:50.030 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.031 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.031 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 24(Integer)
+2022-07-09 01:09:50.032 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.032 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.032 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 18(Integer)
+2022-07-09 01:09:50.033 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.140 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.140 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 19(Integer)
+2022-07-09 01:09:50.141 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.142 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.142 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 15(Integer)
+2022-07-09 01:09:50.144 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.146 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.146 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 14(Integer)
+2022-07-09 01:09:50.147 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.253 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.253 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 6(Integer)
+2022-07-09 01:09:50.254 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.256 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.256 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 17(Integer)
+2022-07-09 01:09:50.257 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.257 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.257 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 13(Integer)
+2022-07-09 01:09:50.258 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.259 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.259 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 23(Integer)
+2022-07-09 01:09:50.260 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.260 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.260 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 20(Integer)
+2022-07-09 01:09:50.261 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.261 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.261 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 21(Integer)
+2022-07-09 01:09:50.262 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:50.263 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:50.263 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 9(Integer)
+2022-07-09 01:09:50.264 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:55.905  WARN 18544 --- [http-nio-9004-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2022-07-09 01:09:55.905 DEBUG 18544 --- [http-nio-9004-exec-8] c.t.server.mapper.TagMapper.selectList   : ==>  Preparing: SELECT id,name FROM tag 
+2022-07-09 01:09:55.905 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.s.m.WeeklyPointMapper.selectList     : ==>  Preparing: SELECT owner_id,weekly_point FROM weekly_point 
+2022-07-09 01:09:55.905 DEBUG 18544 --- [http-nio-9004-exec-11] c.t.s.mapper.CourseMapper.selectList     : ==>  Preparing: SELECT id,name,number,img FROM course 
+2022-07-09 01:09:55.905 DEBUG 18544 --- [http-nio-9004-exec-8] c.t.server.mapper.TagMapper.selectList   : ==> Parameters: 
+2022-07-09 01:09:55.976 DEBUG 18544 --- [http-nio-9004-exec-11] c.t.s.mapper.CourseMapper.selectList     : ==> Parameters: 
+2022-07-09 01:09:55.976 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.s.m.WeeklyPointMapper.selectList     : ==> Parameters: 
+2022-07-09 01:09:55.980 DEBUG 18544 --- [http-nio-9004-exec-8] c.t.server.mapper.TagMapper.selectList   : <==      Total: 7
+2022-07-09 01:09:55.980 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.s.m.WeeklyPointMapper.selectList     : <==      Total: 22
+2022-07-09 01:09:55.981 DEBUG 18544 --- [http-nio-9004-exec-11] c.t.s.mapper.CourseMapper.selectList     : <==      Total: 52
+2022-07-09 01:09:56.014 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.014 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 7(Integer)
+2022-07-09 01:09:56.015 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.036 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.036 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 12(Integer)
+2022-07-09 01:09:56.037 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.102 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.102 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 3(Integer)
+2022-07-09 01:09:56.103 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.104 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.124 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 4(Integer)
+2022-07-09 01:09:56.124 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.125 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.125 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 5(Integer)
+2022-07-09 01:09:56.142 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.151 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.151 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 2(Integer)
+2022-07-09 01:09:56.153 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.154 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.154 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 16(Integer)
+2022-07-09 01:09:56.228 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.229 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.229 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 11(Integer)
+2022-07-09 01:09:56.230 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.231 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.231 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 1(Integer)
+2022-07-09 01:09:56.232 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.258 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.259 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 8(Integer)
+2022-07-09 01:09:56.260 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.276 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.276 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 24(Integer)
+2022-07-09 01:09:56.277 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.278 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.287 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 18(Integer)
+2022-07-09 01:09:56.289 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.295 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.295 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 19(Integer)
+2022-07-09 01:09:56.296 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.335 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.335 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 15(Integer)
+2022-07-09 01:09:56.336 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.337 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.337 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 14(Integer)
+2022-07-09 01:09:56.339 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.340 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.341 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 6(Integer)
+2022-07-09 01:09:56.343 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.343 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.344 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 17(Integer)
+2022-07-09 01:09:56.345 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.345 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.345 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 13(Integer)
+2022-07-09 01:09:56.346 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.347 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.347 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 23(Integer)
+2022-07-09 01:09:56.348 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.349 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.349 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 20(Integer)
+2022-07-09 01:09:56.350 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.351 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.351 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 21(Integer)
+2022-07-09 01:09:56.397 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:09:56.397 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (ID = ?) 
+2022-07-09 01:09:56.397 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 9(Integer)
+2022-07-09 01:09:56.399 DEBUG 18544 --- [http-nio-9004-exec-17] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:10:47.538 DEBUG 18544 --- [http-nio-9004-exec-4] c.t.s.mapper.CourseMapper.selectOne      : ==>  Preparing: SELECT id,name,number,img FROM course WHERE (id = ?) 
+2022-07-09 01:10:47.538 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==>  Preparing: SELECT id,type,type_id,title,text,img,owner_id,like_num,collect_num,time FROM post WHERE (type_id = ? AND type <> ? AND type <> ?) 
+2022-07-09 01:10:47.538 DEBUG 18544 --- [http-nio-9004-exec-4] c.t.s.mapper.CourseMapper.selectOne      : ==> Parameters: 25(Integer)
+2022-07-09 01:10:47.538 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==> Parameters: 25(Integer), 1(String), 2(String)
+2022-07-09 01:10:47.539  WARN 18544 --- [http-nio-9004-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2022-07-09 01:10:47.540 DEBUG 18544 --- [http-nio-9004-exec-4] c.t.s.mapper.CourseMapper.selectOne      : <==      Total: 1
+2022-07-09 01:10:47.553 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.s.m.TagAndServiceMapper.selectList   : ==>  Preparing: SELECT tag_id,course_id FROM tag_course WHERE (course_id = ?) 
+2022-07-09 01:10:47.553 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.s.m.TagAndServiceMapper.selectList   : ==> Parameters: 25(Integer)
+2022-07-09 01:10:47.555 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.s.m.TagAndServiceMapper.selectList   : <==      Total: 1
+2022-07-09 01:10:47.555 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.TagMapper.selectList   : ==>  Preparing: SELECT id,name FROM tag WHERE (id IN (?)) 
+2022-07-09 01:10:47.555 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.TagMapper.selectList   : ==> Parameters: 5(Integer)
+2022-07-09 01:10:47.556 DEBUG 18544 --- [http-nio-9004-exec-3] c.t.server.mapper.TagMapper.selectList   : <==      Total: 1
+2022-07-09 01:10:47.675 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : <==      Total: 4
+2022-07-09 01:10:47.676 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (id = ?) 
+2022-07-09 01:10:47.676 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 1(Integer)
+2022-07-09 01:10:47.677 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:10:47.677 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==>  Preparing: SELECT user_id,post_id,type,time FROM likeandcollect WHERE (user_id = ? AND post_id = ? AND type = ?) 
+2022-07-09 01:10:47.677 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==> Parameters: null, 1(Integer), L(String)
+2022-07-09 01:10:47.678 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : <==      Total: 0
+2022-07-09 01:10:47.679 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==>  Preparing: SELECT user_id,post_id,type,time FROM likeandcollect WHERE (user_id = ? AND post_id = ? AND type = ?) 
+2022-07-09 01:10:47.679 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==> Parameters: null, 1(Integer), C(String)
+2022-07-09 01:10:47.679 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : <==      Total: 0
+2022-07-09 01:10:47.680 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==>  Preparing: SELECT id,type,type_id,title,text,img,owner_id,like_num,collect_num,time FROM post WHERE (type = ? AND type_id = ?) 
+2022-07-09 01:10:47.680 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==> Parameters: 2(String), 1(Integer)
+2022-07-09 01:10:47.749 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : <==      Total: 0
+2022-07-09 01:10:47.750 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (id = ?) 
+2022-07-09 01:10:47.750 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 1(Integer)
+2022-07-09 01:10:47.803 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:10:47.804 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==>  Preparing: SELECT user_id,post_id,type,time FROM likeandcollect WHERE (user_id = ? AND post_id = ? AND type = ?) 
+2022-07-09 01:10:47.804 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==> Parameters: null, 2(Integer), L(String)
+2022-07-09 01:10:47.805 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : <==      Total: 0
+2022-07-09 01:10:47.805 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==>  Preparing: SELECT user_id,post_id,type,time FROM likeandcollect WHERE (user_id = ? AND post_id = ? AND type = ?) 
+2022-07-09 01:10:47.806 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==> Parameters: null, 2(Integer), C(String)
+2022-07-09 01:10:47.806 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : <==      Total: 0
+2022-07-09 01:10:47.807 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==>  Preparing: SELECT id,type,type_id,title,text,img,owner_id,like_num,collect_num,time FROM post WHERE (type = ? AND type_id = ?) 
+2022-07-09 01:10:47.807 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==> Parameters: 2(String), 2(Integer)
+2022-07-09 01:10:47.930 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : <==      Total: 0
+2022-07-09 01:10:47.931 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (id = ?) 
+2022-07-09 01:10:47.931 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 1(Integer)
+2022-07-09 01:10:47.932 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:10:47.933 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==>  Preparing: SELECT user_id,post_id,type,time FROM likeandcollect WHERE (user_id = ? AND post_id = ? AND type = ?) 
+2022-07-09 01:10:47.933 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==> Parameters: null, 3(Integer), L(String)
+2022-07-09 01:10:47.935 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : <==      Total: 0
+2022-07-09 01:10:47.935 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==>  Preparing: SELECT user_id,post_id,type,time FROM likeandcollect WHERE (user_id = ? AND post_id = ? AND type = ?) 
+2022-07-09 01:10:47.936 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==> Parameters: null, 3(Integer), C(String)
+2022-07-09 01:10:47.937 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : <==      Total: 0
+2022-07-09 01:10:47.938 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==>  Preparing: SELECT id,type,type_id,title,text,img,owner_id,like_num,collect_num,time FROM post WHERE (type = ? AND type_id = ?) 
+2022-07-09 01:10:47.938 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==> Parameters: 2(String), 3(Integer)
+2022-07-09 01:10:47.939 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : <==      Total: 0
+2022-07-09 01:10:47.939 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,name,password,picture,point,department,grade,number FROM user WHERE (id = ?) 
+2022-07-09 01:10:48.022 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : ==> Parameters: 1(Integer)
+2022-07-09 01:10:48.023 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.UserMapper.selectOne   : <==      Total: 1
+2022-07-09 01:10:48.025 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==>  Preparing: SELECT user_id,post_id,type,time FROM likeandcollect WHERE (user_id = ? AND post_id = ? AND type = ?) 
+2022-07-09 01:10:48.025 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==> Parameters: null, 4(Integer), L(String)
+2022-07-09 01:10:48.027 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : <==      Total: 0
+2022-07-09 01:10:48.028 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==>  Preparing: SELECT user_id,post_id,type,time FROM likeandcollect WHERE (user_id = ? AND post_id = ? AND type = ?) 
+2022-07-09 01:10:48.028 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : ==> Parameters: null, 4(Integer), C(String)
+2022-07-09 01:10:48.029 DEBUG 18544 --- [http-nio-9004-exec-1] c.tedu.server.mapper.LcMapper.selectOne  : <==      Total: 0
+2022-07-09 01:10:48.092 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==>  Preparing: SELECT id,type,type_id,title,text,img,owner_id,like_num,collect_num,time FROM post WHERE (type = ? AND type_id = ?) 
+2022-07-09 01:10:48.092 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : ==> Parameters: 2(String), 4(Integer)
+2022-07-09 01:10:48.093 DEBUG 18544 --- [http-nio-9004-exec-1] c.t.server.mapper.PostMapper.selectList  : <==      Total: 0

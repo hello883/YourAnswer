@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../fa/css/all.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+	<!-- 引入样式 -->
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<!-- 引入组件库 -->
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+
+</head>
+<body>
+	<!-- <div @click="p = !p">
+		<i class="fa" v-if="p" >&#xf08a;</i>
+    	<i class="fa" v-else>&#xf004;</i>
+	</div> -->
+	
+	<el-upload
+	class="upload-demo"
+	action="https://jsonplaceholder.typicode.com/posts/"
+	:on-preview="handlePreview"
+	:on-remove="handleRemove"
+	:before-remove="beforeRemove"
+	multiple
+	:limit="3"
+	:on-exceed="handleExceed"
+	:file-list="fileList">
+	<el-button size="small" type="primary">点击上传</el-button>
+	<div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+	</el-upload>
+
+	<script src="./js/vue.js"></script>
+	<script>
+		var config = {
+		  data() {
+			  return {
+				fileList: [{name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}, {name: 'food2.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}]
+			  };
+			},
+			methods: {
+			  handleRemove(file, fileList) {
+				console.log(file, fileList);
+			  },
+			  handlePreview(file) {
+				console.log(file);
+			  },
+			  handleExceed(files, fileList) {
+				this.$message.warning(`当前限制选择 3 个文件，本次选择了 ${files.length} 个文件，共选择了 ${files.length + fileList.length} 个文件`);
+			  },
+			  beforeRemove(file, fileList) {
+				return this.$confirm(`确定移除 ${ file.name }？`);
+			  }
+			}
+		}
+		var vue = new Vue(config)
+		</script>
+
+	<!-- <i class="fa" v-if="p" @click="p = !p;console.log("1")">&#xf005;</i>
+	<i class="fa" v-else @click="p = !p">&#xf006;</i> -->
+</body>
+
+</html>

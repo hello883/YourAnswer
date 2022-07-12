@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/creatCourse.css">
+		<title>添加课程</title>
+		<!-- 引入样式 -->
+		<!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
+		<link rel="stylesheet" href="../css/base.css">
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../fa/css/all.css">
+		
+		<style>
+		    .title-wrapper{
+		        height: 60px;
+		        width: 100%;
+		        background-color: #DCDFE6;
+		    }
+		    .title-wrapper .title-wrapper-center{
+		        width: 1300px;
+		        height:60px;
+		        margin: 0 auto 0;
+		    }
+		    .title-wrapper #mail{
+		        float:left;
+		        line-height:60px;
+		        margin-right:10px;
+		    }
+		    .title-wrapper #answer-title{
+		        /* display:block; */
+		        float: left;
+		        line-height: 60px;
+		        /* margin-top: 10px; */
+		        text-align: center;
+		    }
+		    .search-frame{
+		        float:right;
+		        margin: 16px;
+		        text-align: center;
+		        position:relative;
+		    }
+		    .search-frame #search-btn{
+		        width:60px;
+		        font-size: 14px;
+		    }
+		    .search-frame #search-inp{
+		        width:300px;
+		        padding-left: 20px;
+		    }
+		    .search-frame i{
+		        position:absolute;
+		        left: 4px;
+		        top: 5px;
+		    }
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+		    <div class="title-wrapper">
+		        <div class="title-wrapper-center">
+		            <i class="fas fa-envelope fa-2x" id="mail"></i>
+		            <h2 id="answer-title">你有答案吗</h2>
+		            <div class="search-frame">
+		                <i class="fas fa-search"></i>
+		                <input type="text" id="search-inp" placeholder="请输入课程名">
+		                <button id="search-btn">搜索</button>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+			<br>
+			<br>
+		<div class="Content-Main" id="course-app">
+			<div class="Content-Main1">
+				<h1>添加课程</h1>
+			</div>	
+			<table>
+				<label>
+					课程号：<input v-model="number" style="width:120px;height:25px;"><br>
+				</label>
+				<br>
+				<br>
+				<br>
+				<label>
+					课程名：<input v-model="name" style="width:120px;height:25px;"><br>
+				</label>
+				<br>
+				<br>
+				<br>
+				<label>
+					标签：<select v-model="selectedTagId">
+							<!-- <input type="radio" v-for="tag in tagList">{{tag.name}} -->
+							<option v-for="tag in tagList"
+							v-bind:value=tag.tagId>
+								{{tag.name}}
+							</option>
+					</select>
+				</label>
+				<br>
+				<br>
+				<br>
+				<label>
+
+				</el-upload>
+					上传图片：<input v-model="img" class="style_file_content" accept=".jpg" type="file" id="upload_file_id"/><br>
+				</label>
+				<br>
+				<br>
+				<br>
+				<label>
+					<button v-on:click="insert" class="btn">添加课程</button>
+				</label>
+			</table>
+		</div>
+		
+		<!-- 引入组件库 -->
+		<!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
+	</body>
+	<script src="../js/vue.js"></script>
+	<script src="../js/axios.min.js"></script>
+	<script src="../js/const.js"></script>
+	<script src="../js/createCourse.js"></script>
+</html>

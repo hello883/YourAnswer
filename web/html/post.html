@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../fa/css/all.css">
+    <link rel="stylesheet" href="../css/title.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="title-wrapper">
+        <div class="title-wrapper-center">
+            <i class="fas fa-envelope fa-2x" id="mail"></i>
+            <h2 id="answer-title">你有答案吗</h2>
+            <div class="search-frame">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-inp" placeholder="请输入课程名">
+                <button id="search-btn">搜索</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-wrapper" id="post-app">
+        <div>{{postInfo.ownerName}}</div>
+        <div>
+            <div class="post-title">
+                <h1>标题：{{postInfo.title}}</h1>
+                <span>发布者：{{postInfo.ownerName}}</span>
+                <span>发布时间：{{postInfo.time}}</span>
+            </div>
+    
+            <div class="post-desc">
+                <h2>问题描述：</h2>
+                <span>{{postInfo.text}}</span>
+            </div>
+            <div class="post-lcs">
+                <div class="heart" @click="trans(postInfo.l)">
+                    <i class="fa h" v-if="postInfo.l" >&#xf004;</i>
+    	            <i class="fa h" v-else>&#xf08a;</i>
+                </div>
+                <div class="star" @click="trans(postInfo.c)">
+                    <i class="fa c" v-if="!postInfo.c" >&#xf005;</i>
+    	            <i class="fa c" v-else>&#xf006;</i>
+                </div>
+                <i class="fa" >&#xf004;</i>
+    	        <i class="fa">&#xf08a;</i>
+                <i class="fas fa-heart">{{postInfo.likeNum}}</i>
+                <i class="fas fa-star">{{postInfo.collectNum}}</i>
+                <i class="fas fa-share"></i>
+                <span>共XXX个回复</span>
+                <button>发布回答</button>
+            </div>
+        </div>
+		
+        <div class="post-comment">
+			<div v-if="postList[0]">
+				<span>{{postList[0].text}}</span>
+			</div>
+
+			<div v-for="postItem in postList" class="post-com-item">
+				<span>{{postItem.ownerName}}</span>
+				<div class="post-common2">{{postItem.text}}</div>
+				<i class="fas fa-heart">{{postItem.likeNum}}</i>
+				<i class="fas fa-star">{{postItem.collectNum}}</i>
+				<i class="fas fa-share"></i>
+				<span @click="fold(postItem)">
+                    共XXX个回复
+                </span>
+				<button>发布回答</button>
+                <br>
+                <br>
+                <div class="comment2" v-for="i in postItem.list" v-if="postItem.state">
+                    <span>用户名</span>
+                    <div clss="comment2-cont">啊啊啊啊啊我是一个评论</div>
+                </div>
+			</div>
+        </div>
+		
+    </div>
+</body>
+<script src="../js/vue.js"></script>
+<script src="../js/axios.min.js"></script>
+<script src="../js/const.js"></script>
+<script src="../js/post.js"></script>
+</html>

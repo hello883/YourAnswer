@@ -1,0 +1,54 @@
+.post-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: #bfa; */
+}
+
+.post-wrapper .post-title{
+    margin: 20px 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.post-wrapper .post-title span{
+    margin-right: 50px;
+}
+
+.post-wrapper .post-lcs{
+    margin: 10px;
+}
+.post-wrapper .post-lcs i,
+.post-wrapper .post-lcs span{
+    margin-right: 50px;
+}
+
+
+/* 评论内容 */
+.post-com-item{
+    background-color: #EBEEF5;
+    /* height: 180px; */
+    padding: 0 30px 0 10px;
+    margin-bottom: 20px;
+}
+.post-com-item .post-common2{
+    background-color: #fff;
+    /* height: 100px; */
+    padding: 6px;
+    margin-bottom:12px;
+}
+.post-com-item i,
+.post-com-item span{
+    margin-right: 50px;
+}
+.post-com-item button{
+    border: none;
+}
+
+.comment2{
+    width: 1160px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.comment2 span{
+    color:rgb(86, 141, 72)
+}

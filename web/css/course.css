@@ -1,0 +1,55 @@
+.user-hello{
+    /* float:right; */
+    /* margin: 10px 60px; */
+} 
+.display-course{
+    width:1200px;
+    /* background-color: pink; */
+    margin: 0 auto;
+}
+.display-course .display-info {
+    text-align: center;
+}
+
+/* .display-course .display-info .type,
+.display-course .display-info .disp-detail{ */
+    /* margin: 0 auto; */
+/* } */
+
+.post-list{
+    background-color: #bfc;
+    margin: 20px 0;
+    height: 100px;
+    /* position: absolute; */
+}
+.post-list span{
+    font-size: 50px;
+    height: 100%;
+    margin:10px;
+    line-height: 100px;
+
+}
+.post-list p{
+    display: inline-block;
+    /* 超出加省略号 */
+    text-overflow: ellipsis;
+}
+.post-list .post-clt{
+    float: right;
+    /* position: relative; */
+    display:inline-block;
+    line-height: 100px;
+    margin-right: 20px;
+    
+
+}
+.post-list .post-clt span{
+    font-size: 14px;
+}
+
+.add-course{
+    position: fixed;
+    right: 60px;
+    bottom: 80px;
+}
+

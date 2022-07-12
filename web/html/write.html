@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/write.css">
+		<title>发布问题</title>
+		<!-- 引入样式 -->
+		    <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
+		    <link rel="stylesheet" href="../css/base.css">
+		    <link rel="stylesheet" href="../css/normalize.css">
+		    <link rel="stylesheet" href="../fa/css/all.css">
+		    <style>
+		        .title-wrapper{
+		            height: 60px;
+		            width: 100%;
+		            background-color: #DCDFE6;
+		        }
+		        .title-wrapper .title-wrapper-center{
+		            width: 1300px;
+		            height:60px;
+		            margin: 0 auto 0;
+		        }
+		        .title-wrapper #mail{
+		            float:left;
+		            line-height:60px;
+		            margin-right:10px;
+		        }
+		        .title-wrapper #answer-title{
+		            /* display:block; */
+		            float: left;
+		            line-height: 60px;
+		            /* margin-top: 10px; */
+		            text-align: center;
+		        }
+		        .search-frame{
+		            float:right;
+		            margin: 16px;
+		            text-align: center;
+		            position:relative;
+		        }
+		        .search-frame #search-btn{
+		            width:60px;
+		            font-size: 14px;
+		        }
+		        .search-frame #search-inp{
+		            width:300px;
+		            padding-left: 20px;
+		        }
+		        .search-frame i{
+		            position:absolute;
+		            left: 4px;
+		            top: 5px;
+		        }
+		    </style>
+	</head>
+	<body>
+		<div class="wrapper">
+		    <div class="title-wrapper">
+		        <div class="title-wrapper-center">
+		            <i class="fas fa-envelope fa-2x" id="mail"></i>
+		            <h2 id="answer-title">你有答案吗</h2>
+		            <div class="search-frame">
+		                <i class="fas fa-search"></i>
+		                <input type="text" id="search-inp" placeholder="请输入课程名">
+		                <button id="search-btn">搜索</button>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		
+		<div id="write-app">
+		<div class="Content-Main">
+			<div class="Content-Main1">
+				<h1>发起提问</h1>
+			</div>			
+			<table>
+				<tr>
+					<input type="text" v-model="title"  placeholder="标题" style="width:600px;height:40px;"><br>
+				</tr>
+				<tr>
+					<span>问题详情：</span><br>
+					<textarea v-model="text" placeholder="问题详情" style="width:700px; height:250px; "></textarea><br>
+				</tr>
+				<tr>
+					 <p>
+						<input type="file" name="upload" v-model="img">
+						<br>
+						<br>
+						<div display="inline-block">
+							类型：
+							<input type="radio" name="type" value="Q" v-model="type">Q
+							<input type="radio" name="type" value="A" v-model="type">A
+						</div>
+						
+					</p> 
+				</tr>
+				<br>
+				
+				<tr>
+					<button v-on:click="insert" class="btn">提交</button>
+					<button class="btn"><a href="a">返回</a></button>
+				</tr>
+			</table>
+		</div>
+		</div>
+		<!-- 引入组件库 -->
+		<!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
+	</body>
+	<script src="../js/vue.js"></script>
+	<script src="../js/axios.min.js"></script>
+	<script src="../js/const.js"></script>
+	<script src="../js/onload.js"></script>
+	<script src="../js/write.js"></script>
+</html>

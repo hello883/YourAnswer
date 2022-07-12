@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台管理</title>
+		<link rel="stylesheet" href="../css/creatCourse.css">
+	</head>
+	<body>
+		<div display="inline-block" class="Content-Main">
+			<span><a href="./admin.html">管理帖子</a></span>
+			<span>添加课程</span>
+			<span><a href="./tagAdmin.html">添加标签</a></span>
+		</div>
+		<div class="Content-Main" id="ca-app">
+			<table>
+				<label>
+					课程号：<input v-model="number" style="width:120px;height:25px;"><br>
+				</label>
+				<br>
+				<br>
+				<br>
+				<lable>
+					课程名：<input v-model="name" style="width:120px;height:25px;"><br>
+				</lable>
+				<br>
+				<br>
+				<br>
+				<lable>
+					标签：<select v-model="selectedTagId">
+							<option v-for="tag in tagList"
+							v-bind:value=tag.tagId>
+								{{tag.tagName}}
+							</option>
+					</select>
+				</lable>
+				<br>
+				<br>
+				<br>
+				<lable>
+					上传图片：<input v-model="img" class="style_file_content" accept=".jpg" type="file" id="upload_file_id"/><br>
+				</lable>
+				<br>
+				<br>
+				<br>
+				<lable>
+					<button v-on:click="insert" class="btn">添加课程</button>
+				</lable>
+			</table>
+		</div>
+	</body>
+</html>
